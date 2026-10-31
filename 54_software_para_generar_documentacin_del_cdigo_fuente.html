@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>5.4.- Software para generar documentación del código fuente. </title>
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" /></head>
+<body id="exe-node-122" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<div id="main">
+<div id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">5.4.- Software para generar documentación del código fuente.</h1></div></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id173">
+<div class="iDevice emphasis0">
+<div id="ta173_154" class="block iDevice_content">
+<p>Uno de los principales objetivos que debe de satisfacer el software desarrollado es su reutilización. Uno de los axiomas principales radica en no reinventar la rueda. Para ello es fundamental reutilizar el software que ya hemos desarrollado, o bien nosotros u otros programadores, siempre y cuando su licencia lo permita.</p>
+<p>Por este motivo es muy importante desarrollar código fuente bien documentado. Además de la documentación propia del código fuente, es importante que exista una documentación de las clases y  de ficheros fuentes desarrollados.</p>
+<p>Existen herramientas software que facilitan el proceso de generar la documentación a partir de nuestro código fuente. En este epígrafe vamos a centrarnos en JavaDoc, que permite generar la documentación del código fuente escrito en Java y está disponible en NetBeans. Decir que existen programas orientados a otros lenguajes de programación como PHPDoc.</p>
+<h2><strong>JavaDoc</strong></h2>
+<p>JavaDoc nos permite obtener la documentación a partir de nuestro código fuente. Para ello en el código tenemos que insertar una serie de etiquetas, las cuales vamos a ver a continuación:</p>
+<ul class="lista_verificacion">
+<li><b>@author -</b><span> El nombre del autor del proyecto por ejemplo Javier Mejías</span></li>
+<li><b>@version -</b><span> La versión del proyecto, por ejemplo 2.3</span></li>
+<li><b>@see -</b><span> Añade una referencia a una clase, método o enlace web</span></li>
+<li><b>@param -</b><span> Nombre de parámetro utilizado en una función indicando para que sirve.</span></li>
+<li><b>@return -</b><span> El resultado devuelto por la función.</span></li>
+<li><b>@exception - </b><span>Excepciones que lanza nuestro función o clase.</span></li>
+<li><b>@throws<span class="Apple-tab-span"> </span>-</b><span> </span><span>Nombre de la excepción junto con su descripción.</span></li>
+<li><span><b>@deprecated - </b>Añade una alerta al usuario de que el método que sigue a continuación ya no debe usarse y que será eliminado en versiones posteriores.</span></li>
+</ul>
+<p>Introduciremos como comentario comentario al comienzo de cada función y/o clase las etiquetas anteriores que nos interesen. Veamos el siguiente ejemplo.</p>
+<div class="exe-figure exe-image position-center license-CC0" style="width: 500px;"><img src="img-epi5-3JavaDoc1.png" width="500" height="273" alt="Código fuente documentado." title="Código fuente documentado." style="vertical-align: middle;" />
+<div class="figcaption"><span class="author">Javier Mejías</span>. <span class="title"><em>Código fuente documentado.</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></div>
+</div>
+<p>Una vez tengamos generado todo nuestro proyecto, tendremos que ir a la opción Ejecutar (Execute)-&gt;Generar JavaDoc (Generate JavaDoc) y de forma automática se nos generará toda la documentación de nuestro proyecto.</p>
+<div class="exe-figure exe-image position-center license-CC0" style="width: 800px;"><img src="img-epi5-3JavaDoc2.png" width="800" height="513" alt="Documentación generada por JavaDoc." title="Documentación generada por JavaDoc." style="vertical-align: middle;" />
+<div class="figcaption"><span class="author">Javier Mejías</span>. <span class="title"><em>Documentación generada por JavaDoc.</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license nofollow noopener" target="_blank" title="Creative Commons (CC0)">CC0</a><span class="sep">)</span></span></div>
+</div>
+<p>Esta herramienta está disponible en múltiples IDEs, como por ejemplo Eclipse.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_al-andalus_js.js"></script></body></html>

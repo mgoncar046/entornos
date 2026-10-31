@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>2.1.3.1.- Ejemplo de edición de código con Netbeans. </title>
+<meta http-equiv="content-language" content="es" />
+<meta name="generator" content="eXeLearning 2.7 - exelearning.net" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+<script type="text/javascript" src="SCOFunctions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" /></head>
+<body id="exe-node-48" class="exe-scorm" onunload="unloadPage()"><script type="text/javascript">document.body.className+=" js";jQuery(function(){loadPage()})</script>
+<div id="outer">
+<div id="main">
+<div id="nodeDecoration"><div id="headerContent"><h1 id="nodeTitle">2.1.3.1.- Ejemplo de edición de código con Netbeans.</h1></div></div>
+<div class="iDevice_wrapper FreeTextfpdIdevice" id="id104">
+<div class="iDevice emphasis0">
+<div id="ta104_73" class="block iDevice_content">
+<p><a title="anexo_vi_ejemplo_de_edicin_de_cdigo.html" name="anexo_vi_ejemplo_de_edicin_de_cdigo.html"></a>En este documento vamos a introducirnos en la edición de programas en <span lang="en">NetBeans</span> a través de un ejemplo sencillo de una aplicación de Java.</p>
+<p>Lo primero es iniciar Netbeans, seleccionamos archivo - nuevo proyecto.</p>
+<p>Elegimos una aplicación de Java:</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="nuevoProyecto.1.JPG" rel="lightbox"><img src="nuevoProyecto.1.JPG" alt="Captura de pantalla donde se muestra el proceso de edición de programas en NetBeans. " title="Edición de programas en NetBeans 2." class="" width="551" height="259" /></a><a title="Edición de programas en NetBeans 2" href="https://netbeans.org" target="_blank" rel="noopener noreferrer"></a></div>
+</div>
+</div>
+<p>Lo vamos a llamar ejemplo.</p>
+<p>Una vez iniciado el proyecto, en la ventana de proyectos (izquierda) vemos cómo se ha cargado el proyecto ejemplo. Lo seleccionamos con el ratón y se despliega, mostrando todos sus archivos componentes. Seleccionamos Main.java (que es el archivo principal del proyecto, el cual contiene el método principal main), por defecto aparece con el nombre que le hemos puesto al proyecto y podremos identificarlo porque aparece con un triangulito verde al lado del nombre.</p>
+<p>En la ventana de edición (a la derecha) nos aparece el esqueleto de la estructura básica de una aplicación en Java.</p>
+<p>Lo que vamos a hacer a lo largo del ejemplo es añadir código.</p>
+<p>La primera línea de código que vamos a agregar es una orden sencilla en Java, cuya ejecución posterior dará lugar a la aparición de un mensaje por pantalla. </p>
+<p>La apariencia del IDE será la siguiente:</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Edición de programas en NetBeans" href="codigoEjemplo.PNG" rel="lightbox"><img src="codigoEjemplo.PNG" alt="Captura de pantalla donde se muestra el proceso de edición de programas en NetBeans. " title="Edición de programas en NetBeans" class=" imagen_ampliable" width="200" height="154" /></a><a title="Edición de programas en NetBeans" href="https://netbeans.org" target="_blank" rel="noopener noreferrer"></a></div>
+</div>
+</div>
+<p>Ahora vamos a modificar la parte de arriba del programa. Añadimos la siguiente línea: </p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>JOptionPane.showMessageDialog(null,"Ahora mostramos un mensaje emergente.");</code> </pre>
+</div>
+</div>
+<p>Esta línea nos va a servir para adentrarnos en una de las utilidades más importantes de <span lang="en">NetBeans.</span></p>
+<p><span lang="en">NetBeans</span> entiende esta orden como un error (aparece subrayada en una línea roja ondulada y con un pequeño icono al lado izquierdo)</p>
+<p>Si pulsamos sobre ese icono con el ratón, <span lang="en">NetBeans</span> nos aporta sugerencias para deshacer el error:</p>
+<p><a title="Ampliar imagen" href="sugerenciaCorreccionError.PNG" rel="lightbox"> <img alt="Captura de pantalla donde se muestra el proceso de edición de programas en NetBeans. " class=" elemento_centrado imagen_ampliable" src="sugerenciaCorreccionError.PNG" style="width: 200px; height: 164px;" title="Edición de programas en NetBeans 10" width="1000" height="334" /></a></p>
+<p>En este caso, elegimos importar <strong><span style="font-family: courier new, courier, monospace;">javax.swing.JOptionPane</span></strong></p>
+<p>Según el tipo de error, el IDE no nos propone sugerencias para solucionarlo, pero si situamos el ratón encima del icono que muestra el error nos da información sobre qué ocurre (lo que nos ayuda a poder solucionarlo).</p>
+<p><a href="otroError.PNG" target="_blank" rel="lightbox noopener"><img src="otroError.PNG" class=" imagen_ampliable" style="display: block; margin-left: auto; margin-right: auto;" width="406" height="167" /></a></p>
+<p>En este caso, aunque no nos ofrece las sugerencias para solucionarlo nos está indicando que falta un ; (punto y coma).<br />Llegados a este punto, ya hemos comprobado que el editor no nos da ningún problema más. En el siguiente punto del tema, veremos  cómo ejecutar esto.</p>
+<p>El código completo del ejemplo es el siguiente:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>package ejemplo;
+
+import javax.swing.JOptionPane;
+
+public class Ejemplo {
+    public static void main(String[] args) {
+        System.out.println("Hola mundo");
+        System.out.println("Creando mi primer programa");
+        JOptionPane.showMessageDialog(null, "Ahora mostramos un mensaje emergente.");
+    }
+}</code><code></code><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="_al-andalus_js.js"></script></body></html>
